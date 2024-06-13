@@ -93,6 +93,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+eval "$(gh completion --shell zsh)"
 
 # Start zellij if the terminal session is not started within VS Code
 if [[ -z "$ZELLIJ" && -z "$VSCODE_INJECTION" ]]; then
