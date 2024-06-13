@@ -1,0 +1,30 @@
+[user]
+	name = Istvan Hegedus
+	email = istvan@hegistvan.com
+# The below file will overwrite the e-mail from my personal address to the corporate one, but only if I am working
+# in a repository hosted by the corporation.
+# Note  I: that using ssh remotes, this path respects aliases specified in .ssh/config
+# Note II: you should add the .ssh folder to this dotfiles and re-run `stow .`. Just make sure you don't push the repo
+#     out to the public afterwards...
+[includeIf "hasconfig:remote.*.url:corporate.github.com:**/*"]
+	path = ~/.config/git/corporate.gitconfig
+[gpg]
+	program = gpg
+[commit]
+	gpgSign = true
+[core]
+	editor = nvim
+[alias]
+	co = checkout
+	cp = cherry-pick
+	ca = commit -a --amend --no-verify --no-edit
+	fp = push --force-with-lease
+	pp = pull -p
+	diffs = diff --ignore-all-space --ignore-blank-lines --ignore-space-change
+[init]
+	defaultBranch = master
+[log]
+	date = local
+	showSignature = false
+[credential]
+	helper = store

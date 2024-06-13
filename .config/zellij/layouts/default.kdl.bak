@@ -1,0 +1,10 @@
+// To disable the hint at the bottom, rename this file to `default.kdl`
+layout {
+    pane size=1 borderless=true {
+        plugin location="tab-bar"
+    }
+    pane
+    pane size=2 borderless=true {
+        plugin location="status-bar"
+    }
+}
