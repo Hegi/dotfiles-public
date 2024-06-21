@@ -1,0 +1,7 @@
+*.exe binary
+
+windows/*.json text eol=crlf
+windows/*.cmd text eol=crlf
+windows/*.txt text eol=crlf
+windows/*.xml text eol=crlf
+windows/*.ini text eol=crlf

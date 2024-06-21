@@ -21,6 +21,7 @@
 	fp = push --force-with-lease
 	pp = pull -p
 	diffs = diff --ignore-all-space --ignore-blank-lines --ignore-space-change
+    ll = !eza -lah --group-directories-first --icons --git-ignore -I .git
 [init]
 	defaultBranch = master
 [log]
@@ -28,3 +29,5 @@
 	showSignature = false
 [credential]
 	helper = store
+[pull]
+	rebase = false
