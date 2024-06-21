@@ -1,6 +1,6 @@
 [user]
-	name = Istvan Hegedus
-	email = istvan@hegistvan.com
+	name = John Doe
+	email = john@doe.com
 # The below file will overwrite the e-mail from my personal address to the corporate one, but only if I am working
 # in a repository hosted by the corporation.
 # Note  I: that using ssh remotes, this path respects aliases specified in .ssh/config
